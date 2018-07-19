@@ -1,0 +1,64 @@
+/* Aplicando gradiente como background */
+.container{
+     /* background-image: linear-gradient(to bottom, blue, #fff, red); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+    -webkit-animation: mudaCor 10s infinite alternate ;
+    -ms-animation: mudaCor 10s infinite alternate;
+    -moz-animation: mudaCor 10s infinite alternate;
+     animation: mudaCor 10s infinite alternate;
+}
+/* Animação que será aplicada ao background*/
+@-moz-keyframes mudaCor{
+    0%{
+         background-image: linear-gradient(to bottom, blue, #fff, red);        
+    }
+    50%{
+        background-image: linear-gradient(to left, blue,red,#fff);
+    }
+    75%{
+        background-image: linear-gradient(to top right, blue,#fff,red);     
+    }
+    100%{
+        background-image: linear-gradient(to left, red,#fff,blue);      
+    }
+}
+@-webkit-keyframes mudaCor{
+    0%{
+        background-image: linear-gradient(to bottom, blue, #fff, red);        
+   }
+   50%{
+       background-image: linear-gradient(to left, blue,red,#fff);
+   }
+   75%{
+       background-image: linear-gradient(to top right, blue,#fff,red);
+    }
+   100%{
+       background-image: linear-gradient(to left, red,#fff,blue);      
+   }
+}
+@keyframes mudaCor{
+    0%{
+        background-image: linear-gradient(to bottom, blue, #fff, red);        
+   }
+   50%{
+       background-image: linear-gradient(to left, blue,red,#fff);
+   }
+   75%{
+       background-image: linear-gradient(to top right, blue,#fff,red);
+    }
+   100%{
+       background-image: linear-gradient(to left, red,#fff,blue);      
+   }
+}
+
+/* Posicionando o escudo no centro da view */
+.escudo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
