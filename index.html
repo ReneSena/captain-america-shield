@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Rene Sena">
-        <meta name="description" content="O objetivo é mostrar que é possível desenhar usando css usando a criatividade e fíguras geométricas">
+        <meta name="description" content="Creating Captain America Shield using forms geometrics">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Escudo Capitão America - Desenhando com CSS</title>
-        
-        <!-- Importando folhas de estilo -->
+        <title>Captain America - Drawing with CSS</title>
+
         <link rel="icon" href="img/favicon.png">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/escudo.css">
-        <link rel="stylesheet" href="css/estrelaCentral.css">
+        <link rel="stylesheet" href="css/shield.css">
+        <link rel="stylesheet" href="css/star.css">
     </head>
-    <body class="container">
-        <!-- Iniciando a projecao do escudo capitan america -->
-        <div class="escudo">
-            <!-- Criando as formas circulares que darão origem ao escudo, onde serão feitas 5 camadas -->
-            <div class="forma__quadradaOne forma__one--circular">
-                <div class="forma__quadradaTwo forma__two--circular">
-                    <div class="forma__quadradaThree forma__three--circular">
-                        <div class="forma__quadradaFor forma__for--circular">
-                            <div class="forma__quadradaFif forma__fif--circular">
-                            <!-- Estrela central do escudo   -->
-                                <div class="estrela__central">
-                                    <div class="forma__trianguloOne"></div>
-                                    <div class="forma__trianguloTwo"></div>
-                                    <div class="forma__trianguloThree"></div>
-                                    <div class="forma__trianguloFor"></div>
-                                    <div class="forma__trianguloFif"></div>
-                                    <div class="forma__quadrada"></div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        
+    <body>
+		<main class="container">
+			<section class="shield-container">
+				<svg class="shield" viewBox="0 0 150 150" width="600" fill="#1849ca">
+					<circle cx="75" cy="75" r="50" stroke="#c31d10" stroke-width="10"></circle>
+					<circle cx="75" cy="75" r="40" stroke="white" stroke-width="10"></circle>
+					<circle cx="75" cy="75" r="30" stroke="#c31d10" stroke-width="10"></circle>
+					<circle cx="75" cy="75" r="20" stroke="#1849ca" stroke-width="10"></circle>
+				</svg>
+
+				<svg class="star" width="250" height="250" viewBox="0 8 100 125">
+					<polygon width="40" stroke="transparent" fill="white"
+					transform="translate(0,20)" points="50,0 21,90 98,35 2,35 79,90"></polygon>
+				</svg>
+			</section>
+
+			<section class="shield-container">
+				<div class="circle__shield--one">
+					<div class="circle__shield--two"></div>
+					<div class="circle__shield--three"></div>
+					<div class="circle__shield--for"></div>
+					<div class="circle__shield--fifth">
+						<div class="star-container">
+							<div class="poligon__star--one"></div>
+							<div class="poligon__star--two"></div>
+							<div class="poligon__star--three"></div>
+							<div class="poligon__star--for"></div>
+							<div class="poligon__star--fifth"></div>
+							<div class="poligon__star--center"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
     </body>
 </html>
