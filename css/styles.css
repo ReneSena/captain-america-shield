@@ -4,7 +4,7 @@
 	background-attachment: fixed;
 	overflow-x: hidden;
 
-	animation: mudaCor 10s infinite alternate;
+	animation: changeColor 10s infinite alternate;
 
 	display: flex;
 	align-items: center;
@@ -24,20 +24,20 @@
 	transform: translate(-50%, -50%);
 }
 
-@keyframes mudaCor {
+@keyframes changeColor {
 	0% {
-		background-image: linear-gradient(to bottom, blue, #fff, red);
+		background-image: linear-gradient(to bottom, var(--blue), var(--white), var(--red));
 	}
 
 	50% {
-		background-image: linear-gradient(to left, blue,red,#fff);
+		background-image: linear-gradient(to left, var(--blue),var(--red),var(--white));
 	}
 
 	75% {
-		background-image: linear-gradient(to top right, blue,#fff,red);
+		background-image: linear-gradient(to top right, var(--blue),var(--white),var(--red));
 	}
 
 	100%{
-		background-image: linear-gradient(to left, red,#fff,blue);
+		background-image: linear-gradient(to left, var(--red),var(--white),var(--blue));
 	}
 }

@@ -1,0 +1,7 @@
+:root {
+	--red: #c31d10;
+	--blue: #1849ca;
+	--white: #ffffff;
+	--shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+	--border: 1px solid rgba(0, 0, 0, 0.2);
+}

@@ -1,12 +1,12 @@
 .poligon__star--one {
 	position: absolute;
-	top: 0%;
+	top: 0;
 	left: 50%;
-	transform: translate(-50%,0%);
+	transform: translate(-50%,0);
 
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	border-bottom: 50px solid #fff;
+	border-bottom: 50px solid var(--white);
 }
 
 .poligon__star--two,
@@ -17,16 +17,16 @@
 	height: 0;
 
 	position: absolute;
-	bottom: 0%;
-	left: 0%;
+	bottom: 0;
+	left: 0;
 
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
-	border-top:  50px solid #fff;
+	border-top:  50px solid var(--white);
 }
 
 .poligon__star--two {
-	transform: rotate(55deg) translate(0%,-50%) skewX(20deg);
+	transform: rotate(55deg) translate(0,-50%) skewX(20deg);
 }
 .poligon__star--three {
 	transform: rotate(-410deg) translate(145%,100%) skewX(160deg);
@@ -41,7 +41,7 @@
 .poligon__star--center {
 	width: 50px;
 	height: 50px;
-	background-color: #ffffff;
+	background-color: var(--white);
 	border-radius: 30%;
 
 	position: absolute;

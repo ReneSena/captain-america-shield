@@ -2,13 +2,13 @@
     width: 400px;
     height: 400px;
     position: relative;
-	box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.2);
+	box-shadow: var(--shadow);
 }
 
 .circle__shield--two {
     width: 320px;
     height: 320px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .circle__shield--three {
@@ -23,7 +23,7 @@
 }
 
 .circle__shield--fifth {
-    background-color: #1849ca;
+    background-color: var(--blue);
 }
 
 .circle__shield--two,
@@ -39,7 +39,7 @@
 .circle__shield--one,
 .circle__shield--three,
 .circle__shield--for {
-    background-color: #c31d10;
+    background-color: var(--red);
 }
 
 .circle__shield--one,
@@ -48,5 +48,5 @@
 .circle__shield--for,
 .circle__shield--fifth {
      border-radius: 50%;
-     border: 1px solid rgba(0, 0, 0, 0.2);
+     border: var(--border);
 }
