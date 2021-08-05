@@ -28,12 +28,15 @@
 .poligon__star--two {
 	transform: rotate(55deg) translate(0,-50%) skewX(20deg);
 }
+
 .poligon__star--three {
 	transform: rotate(-410deg) translate(145%,100%) skewX(160deg);
 }
+
 .poligon__star--for {
 	transform: rotate(271deg) translate(140%, 185%) skewX(382deg);
 }
+
 .poligon__star--fifth{
 	transform: rotate(448deg) translate(-139%, -20%) skewX(875deg);
 }
